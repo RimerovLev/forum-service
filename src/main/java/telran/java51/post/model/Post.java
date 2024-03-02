@@ -32,6 +32,7 @@ public class Post {
 	public Post() {
 		dateCreated = LocalDateTime.now();
 		comments = new ArrayList<>();
+		tags = new HashSet<>();
 	}
 
 	public Post(String title, String content, String author, Set<String> tags) {
